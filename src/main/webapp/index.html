@@ -36,7 +36,7 @@ $( document ).ready( function() {
             return;
         }
         //console.log("clicked: " + name);
-        $.ajax( 'http://dev-web1.demolab.local/api/getip/' + name, {
+        $.ajax( 'http://dev-web1.demolab.local:8080/api/getip' + name, {
             dataType:'json',
             data:{},
             type:'GET',
