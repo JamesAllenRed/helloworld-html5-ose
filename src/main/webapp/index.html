@@ -36,10 +36,10 @@ $( document ).ready( function() {
             return;
         }
         //console.log("clicked: " + name);
-        $.ajax( 'hello/json/' + name, {
+        $.ajax( '10.50.0.53/api/getip' + name, {
             dataType:'json',
             data:{},
-            type:'POST',
+            type:'GET',
             success:function ( data ) {
                 //console.log("success: " + data.result);
                 $( '#result' ).text( data.result );
