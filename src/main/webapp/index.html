@@ -32,7 +32,7 @@ $( document ).ready( function() {
         result.removeClass( 'invalid' );
 
         }
-        //console.log("clicked: " + name);
+        console.log("clicked: ");
         $.ajax( 'http://dev-web1.demolab.local:8080/api/getip', {
             dataType:'xml',
             data:{},
@@ -43,7 +43,7 @@ $( document ).ready( function() {
             }
         })
         .error( function() {
-            //console.log("error");
+            console.log("error");
         });
     });
 }); // (document).ready
