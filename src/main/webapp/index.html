@@ -31,9 +31,6 @@ $( document ).ready( function() {
 
         result.removeClass( 'invalid' );
 
-        if( !name || !name.length ) {
-            result.addClass( 'invalid' ).text( 'A name is required!' );
-            return;
         }
         //console.log("clicked: " + name);
         $.ajax( 'http://dev-web1.demolab.local:8080/api/getip', {
