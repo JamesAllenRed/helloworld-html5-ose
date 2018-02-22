@@ -34,7 +34,7 @@ $( document ).ready( function() {
         }
         //console.log("clicked: " + name);
         $.ajax( 'http://dev-web1.demolab.local:8080/api/getip', {
-            dataType:'json',
+            dataType:'xml',
             data:{},
             type:'GET',
             success:function ( data ) {
